@@ -1,0 +1,25 @@
+<section>
+    <button type="button" [routerLink]="['/users']" class="return">
+        <img class="buttonReturn" src="../../../assets/Icons/previous-return-svgrepo-com.svg" alt="">
+    </button>
+    <form [formGroup]="editUser" (ngSubmit)="submitFormEdit()">
+        <ul>
+            <li>
+                <h2>User</h2>
+            </li>
+            <li>
+                <input type="text" placeholder="First Name" formControlName="firstName">
+            </li>
+            <li>
+                <input type="text" placeholder="Last Name" formControlName="lastName">
+            </li>
+            <li>
+                <input type="text" placeholder="Email" formControlName="email">
+            </li>
+            <li>
+                <button [disabled]="editUser.invalid">Save </button>
+            </li>
+        </ul>
+    </form>
+
+</section>

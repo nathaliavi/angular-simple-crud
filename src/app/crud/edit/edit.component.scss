@@ -1,0 +1,81 @@
+:host {
+
+    section {
+        background: rgb(238, 174, 202);
+        background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+        min-height: 100vh;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+
+        form {
+            margin-bottom: 1rem;
+            border-radius: 0.95rem;
+            overflow: hidden;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 30%;
+            background-color: white;
+            margin: 20px;
+            height: 50vh;
+
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+        }
+        
+        h2 {
+            color: rgb(70, 70, 70);;
+            font-size: 24px;
+        }
+        
+        .return{
+            margin-top: 80px;
+            margin-left: 25%;
+            width: 4%;
+            border-radius: 150px;
+            border: solid 1px white;
+            cursor: pointer;
+        }
+
+        .buttonReturn { 
+           width:65%;
+        }
+
+        ul {
+            margin: 0 10px;
+            li{
+                padding: 10px;
+                list-style: none;
+            }
+
+            input{
+                border-bottom: 1px solid #e0e0e0;
+                width: 100%;
+                padding:10px 0;
+                outline: none;
+            } 
+
+            button{
+                padding: 8px 14px;
+                background-color: rgb(238, 174, 202);
+                color: rgb(70, 70, 70);
+                border-radius: 50px;
+                font-weight: 400;
+
+            }
+
+            button:disabled {
+                opacity: 0.5; // define a opacidade do botão desabilitado
+                cursor: not-allowed; // define o cursor para indicar que o botão não pode ser clicado
+                // aqui você pode adicionar outros estilos para personalizar a aparência do botão desabilitado
+              }
+
+        }
+    }
+}
